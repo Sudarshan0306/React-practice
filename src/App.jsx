@@ -16,6 +16,7 @@ import TableWithPagination from "./components/TableWithPagination";
 import ToDoApp from "./components/ToDoApp";
 import Loader from "./components/loader/Loader";
 import Text from "./components/Text";
+import Index from "./components/debouncedSearch/Index";
 // import About from "./components/About";
 
 const About = lazy(() => import("./components/About"));
@@ -104,6 +105,7 @@ function App() {
         <Loader size={'medium'}/>
         <Loader size={'large'}/>
         <Text type={'h1'} text={'hello'} />
+        <Index />
       </div>
     </>
   );
