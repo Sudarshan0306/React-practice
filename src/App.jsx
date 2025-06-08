@@ -13,6 +13,9 @@ import { useCallback } from "react";
 import { lazy } from "react";
 import { Suspense } from "react";
 import TableWithPagination from "./components/TableWithPagination";
+import ToDoApp from "./components/ToDoApp";
+import Loader from "./components/loader/Loader";
+import Text from "./components/Text";
 // import About from "./components/About";
 
 const About = lazy(() => import("./components/About"));
@@ -96,6 +99,11 @@ function App() {
           columns={columns}
           rowsPerPage={3}
         />
+        <ToDoApp />
+        <Loader size={'small'}/>
+        <Loader size={'medium'}/>
+        <Loader size={'large'}/>
+        <Text type={'h1'} text={'hello'} />
       </div>
     </>
   );
